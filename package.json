@@ -1,0 +1,40 @@
+{
+  "name": "wmcc-builder-dev",
+  "version": "1.0.0-beta.2",
+  "productName": "wmcc-builder-dev",
+  "description": "WorldMobileCoin © WMCC Desktop Builder",
+  "homepage": "https://github.com/WorldMobileCoin/wmcc-builder-dev",
+  "repository": "git://github.com/WorldMobileCoin/wmcc-builder-dev.git",
+  "bugs": {
+    "url": "https://github.com/WorldMobileCoin/wmcc-builder-dev/issues"
+  },
+  "author": "ParkAlter@WorldMobileCoin <worldmobilecoin@gmail.com>",
+  "keywords": [
+    "worldmobilecoin",
+    "wmcc-node-dev",
+    "wmcc-desktop-dev",
+    "wmcc-application",
+    "wmcc",
+    "node",
+    "desktop",
+    "transaction",
+    "address",
+    "network",
+    "p2p",
+    "cryptocurrency",
+    "blockchain"
+  ],
+  "dependencies": {
+    "wmcc-desktop-dev": "*"
+  },
+  "devDependencies": {
+    "electron-builder": "19.49.2"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build-win32": "node ./bin/build --platform=win32 --arch=ia32 --rebuild=true",
+    "build-win64": "node ./bin/build --platform=win32 --arch=x64 --rebuild=true",
+    "build-linux": "node ./bin/build --platform=linux --arch=x64 --rebuild=true",
+    "build-osx": "node ./bin/build --platform=darwin --arch=x64 --rebuild=true"
+  }
+}
